@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <sections>
+        <dev>
+            <groups>
+                <sd_checkoutsuccess translate="label" module="sd_checkoutsuccess">
+                    <label>Checkout Success</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>3000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <enable_repeat translate="label comment" module="sd_checkoutsuccess">
+                            <label>Enable Repeat Success View</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Useful for debugging, may cause incorrect analytics<br />Only for allowed developer IPs]]></comment>
+                        </enable_repeat>
+                    </fields>
+                </sd_checkoutsuccess>
+            </groups>
+        </dev>
+    </sections>
+</config>

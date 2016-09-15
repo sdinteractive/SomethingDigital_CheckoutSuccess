@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <SomethingDigital_CheckoutSuccess>
+            <version>1.0.0</version>
+        </SomethingDigital_CheckoutSuccess>
+    </modules>
+
+    <global>
+        <models>
+            <sd_checkoutsuccess>
+                <class>SomethingDigital_CheckoutSuccess_Model</class>
+            </sd_checkoutsuccess>
+        </models>
+        <helpers>
+            <sd_checkoutsuccess>
+                <class>SomethingDigital_CheckoutSuccess_Helper</class>
+            </sd_checkoutsuccess>
+        </helpers>
+    </global>
+
+    <frontend>
+        <events>
+            <controller_action_predispatch_checkout_onepage_success>
+                <observers>
+                    <sd_checkoutsuccess>
+                        <type>singleton</type>
+                        <class>sd_checkoutsuccess/observer</class>
+                        <method>prepareSuccessRepeat</method>
+                    </sd_checkoutsuccess>
+                </observers>
+            </controller_action_predispatch_checkout_onepage_success>
+        </events>
+    </frontend>
+</config>

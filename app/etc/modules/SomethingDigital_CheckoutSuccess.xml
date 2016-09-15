@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <SomethingDigital_CheckoutSuccess>
+            <active>true</active>
+            <codePool>community</codePool>
+
+            <depends>
+                <Mage_Checkout />
+            </depends>
+        </SomethingDigital_CheckoutSuccess>
+    </modules>
+</config>
